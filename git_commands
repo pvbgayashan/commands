@@ -1,0 +1,97 @@
+// check the git version
+git --version
+
+// set a username
+git config --global user.name "username here"
+
+// set an email
+git config --global user.email "email here"
+
+// get the git configuration data
+git config --list
+
+// get help
+git help
+
+// newly create or reinitialize git repository
+git init 
+
+// add file(s) to staging area
+git add . 
+or 
+gir add filename
+
+// commit file(s) to the reposity
+git commit -m "message here"
+
+// view full commit log
+git log
+
+// view commit log belongs to specific user
+git log --author="username here"
+
+// view compact commit log
+git log --pretty=oneline
+
+// view compact commit log with desired number of commits
+git log --pretty=oneline -number
+
+// find differences between the working copy and the repository
+git diff
+
+// find differences between the staging area and the repository
+git diff --staged
+
+// delete a file
+git rm filename
+
+// rename a file
+git mv current_filename new_filename
+
+// commit everything in single command
+git commit -am "message here"
+
+// undo changes of working copy
+git checkout -- filename
+
+// unstage files
+git reset HEAD filename
+
+// checkout the old version of the project
+git checkout commit_id -- filename
+
+// setup a git remote connection
+git remote add nickname url
+
+// get the nickname of git remote connection
+git remote
+
+// push local repository to the github
+git push -u nickname master
+
+// clone repository into local machine from github
+git clone url
+
+// push changes to github from cloned copy
+git push origin master
+
+// push another branch instead of default
+git push origin branch_name
+
+// pull changes from origin
+git pull
+
+// create a branch
+git branch branch_name
+
+// switch to a branch
+git checkout branch_name
+
+// merge branches
+git merge branch_name
+
+// delete a branch
+git branch -d branch_name
+
+// delete the branch also from the github
+push origin --delete branch_name
